@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAPTISTE VIAL | PORTFOLIO 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --neon-green: #ccff00;
+            --neon-pink: #ff00ff;
+            --neon-blue: #00ffff;
+            --black: #000000;
+            --white: #ffffff;
+        }
+
+        body {
+            background-color: var(--black);
+            color: var(--white);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+            /* Grille de fond style Canva */
+            background-image: linear-gradient(to right, #1a1a1a 1px, transparent 1px), 
+                              linear-gradient(to bottom, #1a1a1a 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        h1, h2, h3 { font-family: 'Archivo Black', sans-serif; text-transform: uppercase; }
+
+        .hero {
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 10px solid var(--neon-green);
+            position: relative;
+        }
+
+        .hero h1 { font-size: clamp(3rem, 10vw, 8rem); line-height: 0.9; text-align: center; }
+        .hero .tag-label { 
+            position: absolute; bottom: 20px; right: 20px; 
+            background: var(--neon-green); color: black; padding: 5px 15px; font-weight: bold;
+        }
+
+        .section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
+        
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        /* Style Carte "Ticket" */
+        .card {
+            border: 2px solid var(--white);
+            padding: 25px;
+            position: relative;
+            transition: 0.3s;
+        }
+        .card:hover { border-color: var(--neon-pink); transform: scale(1.02); }
+        .card::before {
+            content: "ID: 74921-59300";
+            font-size: 0.6rem;
+            position: absolute; top: 5px; left: 10px; opacity: 0.5;
+        }
+
+        .barcode {
+            height: 50px; background: white; width: 100%; margin-top: 20px;
+            background: repeating-linear-gradient(90deg, #000, #000 2px, #fff 2px, #fff 4px);
+        }
+
+        .skill-tag {
+            display: inline-block; border: 1px solid var(--neon-blue);
+            color: var(--neon-blue); padding: 5px 10px; margin: 5px; font-size: 0.8rem;
+        }
+
+        .btn-contact {
+            background: var(--neon-pink); color: white; padding: 20px 40px;
+            text-decoration: none; font-weight: bold; font-size: 1.5rem; display: block;
+            text-align: center; margin-top: 50px;
+        }
+
+        footer { text-align: center; padding: 40px; border-top: 1px solid #333; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>BAPTISTE<br><span style="color:var(--neon-green)">VIAL</span></h1>
+        <div class="tag-label">PORTFOLIO 2025</div>
+    </header>
+
+    <section class="section">
+        <h2 style="color: var(--neon-pink);">01. A PROPOS</h2>
+        <p style="font-size: 1.2rem; max-width: 800px;">
+            Communicant digital passionné par la création de contenus qui marient sens, créativité et identité visuelle forte. 
+            Expert en <strong>Suite Adobe</strong>, <strong>Canva</strong> et <strong>Intelligence Artificielle</strong> appliquée au design.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2 style="color: var(--neon-blue);">02. EXPERIENCES</h2>
+        <div class="grid-layout">
+            <div class="card">
+                <h3>HELPME STARTUP</h3>
+                <p>Chargé de Com & Projet Digital (2025).</p>
+                <ul>
+                    <li>Lancement d'application à Nancy[cite: 2].</li>
+                    <li>Stratégie 360° (TikTok/Reels)[cite: 2].</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>KRAEMER INT.</h3>
+                <p>Chargé de Communication (2022)[cite: 2].</p>
+                <p>Gestion de l'image haut de gamme et réseaux sociaux[cite: 2].</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 style="color: var(--neon-green);">03. OUTILS</h2>
+        <div>
+            <span class="skill-tag">PHOTOSHOP</span>
+            <span class="skill-tag">ILLUSTRATOR</span>
+            <span class="skill-tag">PREMIERE PRO</span>
+            <span class="skill-tag">CAPCUT</span>
+            <span class="skill-tag">WORDPRESS</span>
+            <span class="skill-tag">CANVA EXPERT</span>
+        </div>
+        <div class="barcode"></div>
+    </section>
+
+    <section class="section">
+        <h2 style="text-align: center;">PROJETS MAJEURS</h2>
+        <div class="grid-layout">
+            <div class="card" style="border-color: var(--neon-blue);">
+                <strong>DRINKINS</strong>
+                <p>Branding & Mockups 3D[cite: 2].</p>
+            </div>
+            <div class="card" style="border-color: var(--neon-pink);">
+                <strong>KÉRASTASE</strong>
+                <p>Modernisation digitale (Genesis/Blond Absolu)[cite: 2].</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <a href="mailto:baptistevial7@gmail.com" class="btn-contact">COLLABORONS ENSEMBLE</a>
+    </section>
+
+    <footer>
+        BAPTISTE VIAL - NANCY, FRANCE - 2025
+    </footer>
+
+</body>
+</html>
